@@ -1,0 +1,72 @@
+*{ 
+     margin:0; 
+     padding:0;
+     box-sizing:border-box;;
+} 
+
+
+.section{ 
+
+     height:300px;
+     width:100%; 
+
+} 
+
+.sidebar{ 
+     width:300px;
+     height:100vh;
+     position:fixed;
+     background-color:black; 
+     left:0;
+     top:0;
+     z-index:200;
+      transition: all 0.5s ease-in-out;
+      transform: translateX(-100%);
+} 
+
+
+
+
+.overlay{ 
+   left:0;
+   top:0; 
+   position:fixed;
+   background-color:rgba(0,0,0,.6); 
+   height:100vh;
+   width:100% ;
+   z-index:100;
+    animation: fadeIn .4s ease-in-out;
+}
+
+
+.sideBarClose{ 
+      position:absolute;
+      color:#fff;
+      top:10px;
+      right:10px;
+      cursor:pointer;
+} 
+
+.sideBarOpen{ 
+      position:fixed; 
+      left:20px; 
+      top:20px;
+      cursor:pointer;
+      z-index: 99;
+      
+}  
+
+
+ .sidebar.active{ 
+
+    transform:translateX(0%);
+} 
+
+
+
+.overlay .active{ 
+       display: block !important;
+} 
+
+
+ 
